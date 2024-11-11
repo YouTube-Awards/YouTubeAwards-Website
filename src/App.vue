@@ -4,7 +4,7 @@ import { ref, watch, computed, onMounted } from 'vue'
 import { useRoute } from 'vue-router';
 
 const site_name = ref("YouTube Awards")
-const site_color = ref("#f00")
+const site_color = ref("#ff0033")
 
 const header_link_count = computed(() => {
 	return document.querySelectorAll("header > ul > li").length
@@ -64,11 +64,11 @@ button {
 }
 
 button:hover {
-	background: color-mix(in srgb, v-bind(site_color) 90% , black 10%);;
+	background: color-mix(in srgb, v-bind(site_color) 90% , black 10%);
 }
 
 a {
-	color: v-bind(site_color);
+	color: color-mix(in srgb, v-bind(site_color) 85% , white 15%);
 }
 
 </style>

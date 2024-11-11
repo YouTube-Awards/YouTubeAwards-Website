@@ -20,9 +20,9 @@
 body {
 	animation: fade-in 0.75s ease;
 	min-height: calc(100vh - var(--header-height));
-	background: #f3f3f3;
+	background: #0f0f0f;
 	font-family: sans-serif;
-	color: #111;
+	color: #f3f3f3;
 	margin-top: var(--header-height);
 }
 

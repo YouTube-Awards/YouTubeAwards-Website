@@ -8,7 +8,7 @@ const app = createApp(App)
 
 app.config.globalProperties.site_name = "YouTube Awards"
 app.config.globalProperties.site_founder = "Karl LÉOGNANY"
-app.config.globalProperties.site_color = "#f00"
+app.config.globalProperties.site_color = "#ff0033"
 app.config.globalProperties.site_main_project = "Social Awards"
 app.config.globalProperties.site_github = {
 	author: "YouTube-Awards",
