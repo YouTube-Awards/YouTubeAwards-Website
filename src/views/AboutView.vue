@@ -6,7 +6,7 @@
 			<p>
 				Meet us every year during autumn to reward the best channels in a lot of categories, from educational to gaming, passing through the new talents of the year or the community vote.
 			</p>
-			<p>You can also watch the Short Awards for the short content creators, during the summer, with Short-based categories.</p>
+			<p>You can also watch the Shorts Awards for the shorts content creators, during the summer, with Shorts-based categories.</p>
 			<p>
 				This website is made using Vue.js and is open-source. You can find the source code on GitHub:<br>
 				<a :href="site_github.url" target="_blank">{{ site_github.full_name }}</a>
