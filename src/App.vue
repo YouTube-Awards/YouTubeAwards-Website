@@ -7,7 +7,7 @@ const site_name = ref("YouTube Awards")
 const site_color = ref("#ff0033")
 
 const header_link_count = computed(() => {
-	return document.querySelectorAll("header > ul > li").length
+	return document.querySelectorAll("header a").length
 })
 
 const route = useRoute()
@@ -27,14 +27,12 @@ watch(current_page_name, (new_page_name) => {
 
 <template>
 	<header>
-		<ul>
-			<li><RouterLink to="/">Home</RouterLink></li>
-			<li><a href="https://www.youtube.com/@YTubeAwards" target="_blank">YouTube Channel</a></li>
-			<li><a :href="site_github.url" target="_blank">GitHub</a></li>
-			<li><RouterLink to="/previous-editions">Previous Editions</RouterLink></li>
-			<li><RouterLink to="/results">Results</RouterLink></li>
-			<li><RouterLink to="/about">About</RouterLink></li>
-		</ul>
+		<RouterLink to="/">Home</RouterLink>
+		<a href="https://www.youtube.com/@YTubeAwards" target="_blank">YouTube Channel</a>
+		<a :href="site_github.url" target="_blank">GitHub</a>
+		<RouterLink to="/previous-editions">Previous Editions</RouterLink>
+		<RouterLink to="/results">Results</RouterLink>
+		<RouterLink to="/about">About</RouterLink>
 	</header>
 
 	<main>
@@ -53,9 +51,6 @@ watch(current_page_name, (new_page_name) => {
 
 header {
 	background-color: v-bind(site_color);
-}
-
-header > ul {
 	grid-template-columns: repeat(v-bind(header_link_count), 1fr);
 }
 
