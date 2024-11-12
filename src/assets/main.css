@@ -41,7 +41,7 @@ header {
 	width: 100%;
 	font-size: 1.125rem;
 	color: #f3f3f3;
-	box-shadow: 0 0 12px #1118;
+	box-shadow: 0 0 12px #0008;
 	padding: 0 1rem;
 	display: grid;
 	grid-template-rows: 100%;
@@ -112,7 +112,8 @@ ul, ol {
 }
 
 ul > li, ol > li {
-	padding: 0.5rem 0;
+	padding: 0.25rem 0.75rem;
+	margin-left: 1rem;
 }
 
 button {
