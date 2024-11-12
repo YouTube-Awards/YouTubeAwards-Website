@@ -2,7 +2,17 @@
 
 import { onMounted, onBeforeUnmount, ref } from 'vue'
 
-const event_date = new Date('2024-11-14T22:00:00Z') // Sample date
+const event_date = new Date('2024-11-14T19:00:00Z') // Sample date
+const event_date_string = ref(event_date.toLocaleString('en-US', {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    hour12: false
+}))
 
 const update_time_delta = () => {
     let td = new Date(event_date - new Date())
@@ -43,6 +53,7 @@ onMounted(() => {
     <div class="hours"><span>Hours</span>{{ hours }}</div>
     <div class="minutes"><span>Minutes</span>{{ minutes }}</div>
     <div class="seconds"><span>Seconds</span>{{ seconds }}</div>
+    <p>On {{ event_date_string }}</p>
 </section>
 
 </template>
@@ -58,7 +69,7 @@ section {
     padding: 0 2rem;
 }
 
-section > h1 {
+section > h1, section > p {
     grid-column: 1 / -1;
     text-align: center;
 }
