@@ -59,9 +59,6 @@ header a {
 main {
 	flex-grow: 1;
 	padding-bottom: 0.25em;
-}
-
-.w70p {
 	width: 70%;
 }
 
