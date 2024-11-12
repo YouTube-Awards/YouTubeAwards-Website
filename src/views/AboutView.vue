@@ -2,22 +2,38 @@
 	<section>
 		<section>
 			<h1>About</h1>
-			<p>YouTube Awards is an event made by the community and isn't affiliated with <a href="https://www.google.com/" target="_blank">Google</a> or <a href="https://www.youtube.com/" target="_blank">YouTube</a>.</p>
-			<p>
-				Meet us every year during autumn to reward the best channels in a lot of categories, from educational to gaming, passing through the new talents of the year or the community vote.
-			</p>
-			<p>You can also watch the Shorts Awards for the shorts content creators, during the summer, with Shorts-based categories.</p>
-			<p>
-				This website is made using Vue.js and is open-source. You can find the source code on GitHub:<br>
-				<a :href="site_github.url" target="_blank">{{ site_github.full_name }}</a>
-			</p>
-			<p>If you have any suggestions or bug reports, please open an issue on GitHub.</p>
+			<!-- Make a new About page -->
 		</section>
 
 		<section>
-			<h1>{{ site_main_project }}</h1>
-			<p>{{ site_name }} is part of {{ site_main_project }}, a project that aims to create a platform for rewarding content creators in every platform.</p>
-			<p>{{ site_main_project }} contains {{ site_name }}, Instagram Awards, Shorts Awards (part of {{ site_name }}) and Facebook Awards.</p>
+			<h2>Categories</h2>
+			<p>The {{ site_name }} contains a lot of categories to award the YouTube content creators. Here is the list:</p>
+			<ul>
+				<li>Most Earned Subscribers</li>
+				<li>Most Earned Likes</li>
+				<li>Most Earned Comments</li>
+				<li>New Talent of the Year</li>
+				<li>Most Creative Video</li>
+				<li>Best Educational Channel</li>
+				<li>Best Gaming Channel</li>
+				<li>Best Documentary/Informative Video</li>
+				<li>Best Collaboration</li>
+				<li>Breakthrough Creator of the Year</li>
+				<li>Best Production Quality</li>
+				<li>Best Playlist</li>
+				<li>Community Vote</li>
+			</ul>
+			<p>These categories exist to give more context to the awards. Each category represents a unique aspect of YouTube content creation, recognizing excellence in various areas.
+			The winners are selected through a rigorous judging process that considers various factors such as viewership, engagement, creativity, and overall impact.
+			The judging panel comprises industry experts and experienced YouTubers who evaluate each nominee based on pre-defined criteria for each category.
+			This ensures fairness and transparency in the selection process, guaranteeing that the most deserving creators are recognized for their outstanding contributions to the YouTube community.</p>
+		</section>
+
+		<section>
+			<h2>{{ site_main_project }}</h2>
+			<!-- Need to rewrite this section -->
+			<p>{{ site_name }} is part of {{ site_main_project }}, a project that aims to create a platform for rewarding content creators in every platform.
+			{{ site_main_project }} contains {{ site_name }}, Instagram Awards, Shorts Awards (part of {{ site_name }}) and Facebook Awards.</p>
 			<p>{{ site_main_project }} is founded by {{ site_founder }} and isn't affiliated with any of the platforms mentioned above.</p>
 		</section>
 	</section>
