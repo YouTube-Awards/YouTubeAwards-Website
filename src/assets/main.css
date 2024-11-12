@@ -112,8 +112,9 @@ ul, ol {
 }
 
 ul > li, ol > li {
-	padding: 0.25rem 0.75rem;
-	margin-left: 1rem;
+	padding: 0.25rem 0;
+	margin-left: 1.25rem;
+	list-style-type: disc;
 }
 
 button {
