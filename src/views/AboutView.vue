@@ -2,7 +2,8 @@
 	<section>
 		<section>
 			<h1>About</h1>
-			<!-- Make a new About page -->
+            <p>The YouTube Awards is an annual event dedicated to recognizing and celebrating the outstanding contributions of YouTube content creators. Our mission is to honor creativity,
+			innovation, and excellence in various categories, showcasing the best of what the platform has to offer.</p>
 		</section>
 
 		<section>
