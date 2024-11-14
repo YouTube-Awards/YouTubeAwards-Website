@@ -31,11 +31,13 @@
 		</section>
 
 		<section>
-			<h2>{{ site_main_project }}</h2>
-			<!-- Need to rewrite this section -->
-			<p>{{ site_name }} is part of {{ site_main_project }}, a project that aims to create a platform for rewarding content creators in every platform.
-			{{ site_main_project }} contains {{ site_name }}, Instagram Awards, Shorts Awards (part of {{ site_name }}) and Facebook Awards.</p>
-			<p>{{ site_main_project }} is founded by {{ site_founder }} and isn't affiliated with any of the platforms mentioned above.</p>
+			<h2>{{ site_main_project }}</h2>		
+			<p>{{ site_name }} is a proud initiative under {{ site_main_project }}, a comprehensive project dedicated to recognizing and rewarding content creators across various platforms. 
+			In addition to {{ site_name }}, {{ site_main_project }} encompasses the Instagram Awards, Shorts Awards (which are part of {{ site_name }}), and Facebook Awards.</p>
+			<p>Founded by {{ site_founder }}, {{ site_main_project }} operates independently and is not affiliated with any of the platforms mentioned. Our goal is to create a vibrant community
+			that celebrates creativity and innovation, encouraging content creators to push the boundaries of their craft.</p>
+			<p>Through our awards, we aim to inspire both established creators and newcomers alike, providing them with the recognition they deserve for their hard work and dedication.
+			We believe that every creator has a unique story to tell, and we are committed to highlighting those stories through our various award categories.</p>
 		</section>
 	</section>
 </template>
