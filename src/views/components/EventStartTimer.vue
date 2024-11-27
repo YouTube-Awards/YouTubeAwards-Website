@@ -2,7 +2,9 @@
 
 import { onMounted, onBeforeUnmount, ref } from 'vue'
 
-const event_date = new Date('2024-11-14T19:00:00Z') // Sample date
+const section = ref(null)
+
+const event_date = new Date('2025-11-14T19:00:00Z') // Sample date
 const event_date_string = ref(event_date.toLocaleString('en-US', {
     weekday: 'long',
     year: 'numeric',
@@ -16,6 +18,9 @@ const event_date_string = ref(event_date.toLocaleString('en-US', {
 
 const update_time_delta = () => {
     let td = new Date(event_date - new Date())
+    if (td < 0) {
+        section.value.style.display = 'none'
+    }
     return td
 }
 
@@ -46,7 +51,7 @@ onMounted(() => {
 
 <template>
 
-<section>
+<section :ref="section">
     <h1>The event starts in</h1>
     <div class="months"><span>Months</span>{{ months }}</div>
     <div class="days"><span>Days</span>{{ days }}</div>
